@@ -74,8 +74,10 @@ This phase simulates real-world environmental "attacks" like vandalism or extrem
 
 ### Case 0: Normal Image (No Tampering)
 *Baseline test to confirm the model recognizes the clear sign.*
-* **Input:** ![Original Image](images/30_original.png)
-* **Prediction:** ![Normal Prediction](images/prediction_normal.png)
+* **Input:**
+* ![Original Image](images/30_original.png)
+* **Prediction:**
+* ![Normal Prediction](images/prediction_normal.png)
 
 ---
 
