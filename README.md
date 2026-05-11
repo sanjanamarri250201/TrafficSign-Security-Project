@@ -43,7 +43,7 @@ The foundation of the project is a deep learning model trained on the GTSRB data
 * **Architecture:** A multi-layer CNN featuring Convolutional layers for feature extraction, Max Pooling for spatial reduction, and Dropout layers to prevent overfitting.
 
 > **Output Demonstration:**
-> <br><img src="images/loss_accuracy_graph.png" alt="Train and Test Loss Graph" width="600">
+> <br><img src="images/loss_accuracy_graph.png" alt="Train and Test Loss Graph" width="320">
 
 ---
 
