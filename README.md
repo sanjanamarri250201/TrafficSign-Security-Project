@@ -75,30 +75,36 @@ This phase simulates real-world environmental "attacks" like vandalism or extrem
 ### Case 0: Normal Image (No Tampering)
 *Baseline test to confirm the model recognizes the clear sign.*
 * **Input:**
-* ![Original Image](images/30_original.png)
+ ![Original Image](images/30_original.png)
 * **Prediction:**
-* ![Normal Prediction](images/prediction_normal.png)
+ ![Normal Prediction](images/prediction_normal.png)
 
 ---
 
 ### Case 1: The Center of the '3'
 *Testing the impact of minor internal feature obstruction.*
-* **Input:** ![Black Line Middle 3 Original](images/black_line_middle_original.png)
-* **Prediction:** ![Black Line Middle 3 Prediction](images/black_line_middle_prediction.png)
+* **Input:**
+  ![Black Line Middle 3 Original](images/black_line_middle_original.png)
+* **Prediction:**
+  ![Black Line Middle 3 Prediction](images/black_line_middle_prediction.png)
 
 ---
 
 ### Case 2: The Red Border
 *Testing the model's reliance on the outer circular geometry.*
-* **Input:** ![Black Line Red Circle Original](images/black_line_red_circle_original.png)
-* **Prediction:** ![Black Line Red Circle Prediction](images/black_line_red_circle_prediction.png)
+* **Input:**
+  ![Black Line Red Circle Original](images/black_line_red_circle_original.png)
+* **Prediction:**
+  ![Black Line Red Circle Prediction](images/black_line_red_circle_prediction.png)
 
 ---
 
 ### Case 3: The Top "Vulnerability" Spot
 *Testing the critical junction where the digit meets the background.*
-* **Input:** ![Black Line Top 3 Original](images/black_line_top_3_original.png)
-* **Prediction:** ![Black Line Top 3 Prediction](images/black_line_top_3_prediction.png)
+* **Input:**
+  ![Black Line Top 3 Original](images/black_line_top_3_original.png)
+* **Prediction:**
+  ![Black Line Top 3 Prediction](images/black_line_top_3_prediction.png)
 
 ---
 
@@ -117,13 +123,17 @@ The final phase uses the **Fast Gradient Sign Method (FGSM)**. This is a mathema
 
 #### Step A: The Baseline (Clean Input)
 *The starting point: a 30 km/h image the model knows perfectly.*
-* **Input Image:** ![FGSM Original Image](images/fgsm_original_image.png)
-* **Prediction:** ![FGSM Original Prediction](images/fgsm_original_prediction.png)
+* **Input Image:**
+  ![FGSM Original Image](images/fgsm_original_image.png)
+* **Prediction:**
+  ![FGSM Original Prediction](images/fgsm_original_prediction.png)
 
 #### Step B: The Attack (Adversarial Spoof)
 *The mathematical "noise" is added. Notice the prediction flips to a much higher speed.*
-* **Generated Spoof:** ![FGSM Spoofed Image](images/fgsm_spoofed_image.png)
-* **Prediction:** ![FGSM Spoof Prediction](images/fgsm_spoof_prediction.png)
+* **Generated Spoof:**
+  ![FGSM Spoofed Image](images/fgsm_spoofed_image.png)
+* **Prediction:**
+  ![FGSM Spoof Prediction](images/fgsm_spoof_prediction.png)
 
 ---
 
